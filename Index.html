@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Homepage</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-image: url('hero-image.jpg'); /* Replace 'hero-image.jpg' with actual image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .btn-reservation {
+      display: inline-block;
+      background-color: #ff4500;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-reservation:hover {
+      background-color: #cc3700;
+    }
+
+    .featured-dishes {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .dish {
+      margin-bottom: 30px;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 20px); /* Adjust as needed */
+      margin-right: 20px;
+      box-sizing: border-box;
+    }
+
+    .dish:last-child {
+      margin-right: 0;
+    }
+
+    .dish img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .dish h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .dish p {
+      margin-bottom: 10px;
+    }
+
+    .dish span {
+      display: block;
+      font-weight: bold;
+    }
+
+    .testimonials {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin-bottom: 30px;
+    }
+
+    .testimonial img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .customer-name {
+      font-weight: bold;
+    }
+
+    .contact {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .reservation-form {
+      display: none;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Homepage</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-image: url('https://source.unsplash.com/random/400x300'); /* Replace 'hero-image.jpg' with actual image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .btn-reservation {
+      display: inline-block;
+      background-color: #ff4500;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-reservation:hover {
+      background-color: #cc3700;
+    }
+
+    .featured-dishes {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .dish {
+      margin-bottom: 30px;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 20px); /* Adjust as needed */
+      margin-right: 20px;
+      box-sizing: border-box;
+    }
+
+    .dish:last-child {
+      margin-right: 0;
+    }
+
+    .dish img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .dish h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .dish p {
+      margin-bottom: 10px;
+    }
+
+    .dish span {
+      display: block;
+      font-weight: bold;
+    }
+
+    .testimonials {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin-bottom: 30px;
+    }
+
+    .testimonial img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .customer-name {
+      font-weight: bold;
+    }
+
+    .contact {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .reservation-form {
+      display: none;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Indulge in the finest culinary experience</p>
+      <button id="reservation-btn" class="btn-reservation">Make a Reservation</button>
+    </div>
+  </section>
+
+  <!-- Featured Dishes Section -->
+  <section class="featured-dishes" id="menu">
+    <h2>Featured Dishes</h2>
+    <div class="dish">
+      <img src="https://source.unsplash.com/random/400x300" alt="Featured Dish 1">
+      <h3>Grilled Salmon</h3>
+      <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</p>
+      <span>$18.99</span>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/random/400x301" alt="Featured Dish 2">
+      <h3>Classic Caesar Salad</h3>
+      <p>Crisp romaine lettuce, homemade Caesar dressing, croutons, and shaved parmesan.</p>
+      <span>$12.99</span>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/random/400x302" alt="Featured Dish 3">
+      <h3>Filet Mignon</h3>
+      <p>Tender filet mignon grilled to perfection, served with garlic mashed potatoes and sautéed asparagus.</p>
+      <span>$29.99</span>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/random/400x303" alt="Featured Dish 4">
+      <h3>Vegetarian Pizza</h3>
+      <p>Homemade pizza topped with fresh vegetables, mozzarella cheese, and marinara sauce.</p>
+      <span>$14.99</span>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/random/400x304" alt="Featured Dish 5">
+      <h3>Tiramisu</h3>
+      <p>Classic Italian dessert made with layers of espresso-soaked ladyfingers and mascarpone cheese.</p>
+      <span>$8.99</span>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <img src="https://source.unsplash.com/random/100x100" alt="Customer 1">
+      <p>"Absolutely delicious food! The flavors were outstanding, and the service was top-notch. Will definitely be returning!"</p>
+      <p class="customer-name">- Emily S.</p>
+    </div>
+    <div class="testimonial">
+      <img src="https://source.unsplash.com/random/101x101" alt="Customer 2">
+      <p>"I had an amazing dining experience here. The ambiance is lovely, and the staff is so friendly. Highly recommend!"</p>
+      <p class="customer-name">- Michael D.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="reservation-form">
+      <h3>Make a Reservation</h3>
+      <form id="reservation-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <p>For inquiries or reservations, please call us at: <br> <strong>(123) 456-7890</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to show/hide the reservation form
+    function toggleReservationForm() {
+      var reservationForm = document.getElementById("reservation-form");
+      reservationForm.style.display = (reservationForm.style.display === "none" || reservationForm.style.display === "") ? "block" : "none";
+    }
+
+    // Add event listener to reservation button
+    document.getElementById("reservation-btn").addEventListener("click", function() {
+      toggleReservationForm();
+    });
+  </script>
+</body>
+</html>
